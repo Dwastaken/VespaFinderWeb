@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Merci</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <div class="Navbar" style="margin-right: 12px">
+      <ul class="flex items-center justify-between gap-1">
+        <li style="padding-top: 1%">
+          <a href="indexfr.html">
+            <img
+              src="../Images/Logo.png"
+              alt="Logo"
+              style="width: 120px; height: auto; padding-left: 20%"
+            />
+          </a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="indexfr.html" class="px-4 hover:text-yellow-500 hover:underline">Accueil</a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="FindDealerfr.html" class="px-4 hover:text-yellow-500 hover:underline">Trouver un Revendeur</a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="overonsfr.html" class="px-4 hover:text-yellow-500 hover:underline">À propos</a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="Contactfr.html" class="px-4 hover:text-yellow-500 hover:underline">Contact</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="group relative" style="padding-top: 1%">
+          <button class="p-0 focus:outline-none">
+            <img
+              src="../Images/Frankrijk.png"
+              alt="Langue"
+              style="height: 22px; width: 40px; position: relative"
+            />
+          </button>
+          <div
+            class="absolute right-0 z-10 hidden rounded border border-gray-200 bg-white px-2 py-2 shadow-md group-hover:block"
+          >
+            <a href="bedankten.html" class="block py-1 hover:bg-gray-100">
+              <img src="../Images/Engeland.png" alt="English" style="height: 18px; width: 18px" />
+            </a>
+            <a href="bedanktdu.html" class="block py-1 hover:bg-gray-100">
+              <img src="../Images/Duitsland.png" alt="Deutsch" style="height: 18px; width: 18px" />
+            </a>
+            <a href="bedankt.html" class="block py-1 hover:bg-gray-100">
+              <img src="../Images/Nederland.png" alt="Nederlands" style="height: 18px; width: 18px" />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <main class="flex-grow flex items-center justify-center text-center px-4">
+      <div>
+        <h1 class="text-2xl font-semibold mb-8">
+          Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+        </h1>
+        <div class="mt-6 flex justify-center">
+          <a
+            href="indexfr.html"
+            class="rounded-full bg-yellow-500 px-12 py-2 font-bold text-black hover:bg-yellow-600 text-center"
+          >
+            Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-16" style="background-color: rgb(35, 45, 6)">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+          <!-- Logo -->
+          <div class="mb-6 md:mb-0 md:w-1/4">
+            <img class="w-3/4 md:w-1/2 lg:w-2/5" src="../Images/Logowit.png" alt="LogoRobor" />
+          </div>
+
+          <!-- Texte -->
+          <div class="mb-6 md:mb-0 md:w-1/3 text-white">
+            <p class="text-sm">
+              Dans tout ce qui existe, nous voyons comment l'améliorer, le rendre plus intelligent et plus pratique. Alors nous nous y mettons ! Comment pouvons-nous rendre les choses plus efficaces et plus pratiques, et comment pouvons-nous utiliser votre matériel de manière innovante actuellement utilisé ?
+            </p>
+            <p class="text-sm mt-4">Propulsé par Robor Nature B.V.</p>
+            <p class="text-sm mt-1">
+              © 2023 Tous droits réservés. Réalisé par
+              <a href="#" class="underline hover:text-gray-300">MaximumControl</a>.
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <div class="text-white md:w-1/4">
+            <h3 class="font-bold mb-2">Informations de contact</h3>
+            <ul class="text-sm">
+              <li class="flex items-center mb-1">
+                <span class="mr-2">•</span>
+                <a href="tel:+31 (0) 547 292 090" class="hover:underline">+31 (0) 547 292 090</a>
+              </li>
+              <li class="flex items-center mb-1">
+                <span class="mr-2">•</span>
+                <a href="mailto:nature@robor.nl" class="hover:underline">nature@robor.nl</a>
+              </li>
+              <a href="https://www.google.nl/maps/place/Robor+Electronics+B.V./@52.2257919,6.6915057,17z/">
+                <li class="flex items-center mb-1">
+                  <span class="mr-2">•</span>
+                  <span>Suetersweg 6A, 7497 MZ Bentelo</span>
+                </li>
+              </a>
+              <li class="flex items-center mb-1">
+                <span class="mr-2">•</span>
+                <span>Pays-Bas</span>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

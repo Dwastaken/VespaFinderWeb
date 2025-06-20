@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FindMyDealer</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 70px;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .Navbar {
+        position: relative;
+        z-index: 9999;
+        background-color: white;
+      }
+
+      .mapboxgl-ctrl-top-right {
+        top: 30px !important;
+        right: 5px;
+      }
+
+      /* Fix: voorkom dat de geolocatiecirkel klikken blokkeert */
+      .mapboxgl-user-location-dot,
+      .mapboxgl-user-location-accuracy-circle {
+        pointer-events: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="Navbar" style="margin-right: 12px">
+      <ul class="flex items-center justify-between gap-1">
+        <li style="padding-top: 1%">
+          <a href="indexdu.html">
+            <img
+              src="../Images/Logo.png"
+              alt="Logo"
+              style="width: 120px; height: auto; padding-left: 20%"
+            />
+          </a>
+        </li>
+        <li style="padding-top: 1%">
+          <a
+            href="indexdu.html"
+            class="px-4 hover:text-yellow-500 hover:underline"
+            >Startseite</a
+          >
+        </li>
+        <li style="padding-top: 1%">
+          <a
+            href="FindDealerdu.html"
+            class="px-4 hover:text-yellow-500 underline"
+            >Händler finden</a
+          >
+        </li>
+        <li style="padding-top: 1%">
+          <a
+            href="overonsdu.html"
+            class="px-4 hover:text-yellow-500 hover:underline"
+            >Über uns</a
+          >
+        </li>
+        <li style="padding-top: 1%">
+          <a
+            href="Contactdu.html"
+            class="px-4 hover:text-yellow-500 hover:underline"
+            >Kontakt</a
+          >
+        </li>
+        <!-- Dropdown container -->
+        <li class="group relative" style="padding-top: 1%">
+          <button class="p-0 focus:outline-none">
+            <img
+              src="../Images/Duitsland.png"
+              alt="Menu"
+              style="height: 22px; width: 40px; position: relative"
+            />
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            class="absolute right-0 z-10 hidden rounded border border-gray-200 bg-white px-2 py-2 shadow-md group-hover:block"
+          >
+            <a href="FindDealeren.html" class="block py-1 hover:bg-gray-100">
+              <img
+                src="../Images/Engeland.png"
+                alt="English"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+            <a href="FindDealer.html" class="block py-1 hover:bg-gray-100">
+              <img
+                src="../Images/Nederland.png"
+                alt="Deutsch"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+            <a href="FindDealerfr.html" class="block py-1 hover:bg-gray-100">
+              <img
+                src="../Images/Frankrijk.png"
+                alt="Frans"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<div class="Mapboxapi">
+    <!-- Map -->
+    <div id="map"></div>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoicm9ib3JlbGVjdHJvbmljcyIsImEiOiJjbTljaTE1c3cwM2NzMnFzNXQzbzN4bGs1In0.Pcgcpps-vMjg85eEneRg4A";
+
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v9",
+        projection: "globe",
+        zoom: 4,
+        center: [6.1423, 46.2044],
+      });
+
+      map.addControl(new mapboxgl.NavigationControl());
+      map.scrollZoom.enable();
+
+      map.addControl(
+        new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true,
+            timeout: 6000,
+            maximumAge: 0,
+          },
+          trackUserLocation: true,
+        })
+      );
+
+      map.on("style.load", () => {
+        map.setFog({});
+      });
+
+      const markers = [
+        {
+          lngLat: [6.693807, 52.22567],
+          popupContent: `
+            <div style="text-align: center;">
+              <img src="../Images/robormarker.png" alt="Robor Electronics" style="width: 250px; height: auto; margin-bottom: 10px;" />
+              <p>Robor Electronics</p>
+              <p>Suetersweg 6A, 7497 MZ Bentelo</p>
+              <p>0547292090</p>
+              <a href="https://robor.nl"><p>https://robor.nl/</p></a>
+            </div>
+          `,
+        },
+        {
+          lngLat: [4.196359, 51.00168],
+          popupContent: `
+            <div style="text-align: center;">
+              <img src="../Images/wallabiekemarker.png" alt="Wallabieke" style="width: 250px; height: auto; margin-bottom: 10px;" />
+              <p>Bart Callaert</p>
+              <p>Wallabieke</p>
+              <p>Bovendonkstraat 194, 9255 Buggenhout</p>
+              <a href="https://wallabieke.be"><p>https://wallabieke.be/</p></a>
+            </div>
+          `,
+        },
+      ];
+
+      markers.forEach((markerData) => {
+        const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(markerData.popupContent);
+        new mapboxgl.Marker({ color: "#ff0000" })
+          .setLngLat(markerData.lngLat)
+          .setPopup(popup)
+          .addTo(map);
+      });
+
+      const secondsPerRevolution = 240;
+      const maxSpinZoom = 5;
+      const slowSpinZoom = 3;
+      let userInteracting = false;
+      const spinEnabled = true;
+
+     //function spinGlobe() {
+     //  const zoom = map.getZoom();
+     //  if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
+     //    let distancePerSecond = 360 / secondsPerRevolution;
+     //    if (zoom > slowSpinZoom) {
+     //      const zoomDif = (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
+     //      distancePerSecond *= zoomDif;
+     //    }
+     //    const center = map.getCenter();
+     //    center.lng -= distancePerSecond;
+     //    map.easeTo({ center, duration: 1000, easing: (n) => n });
+     //  }
+     //}
+
+      map.on("mousedown", () => {
+        userInteracting = true;
+      });
+      map.on("dragstart", () => {
+        userInteracting = true;
+      });
+      map.on("moveend", () => {
+        spinGlobe();
+      });
+
+      spinGlobe();
+    </script>
+   </div> 
+   
+  </body>
+</html>

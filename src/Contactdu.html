@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktiere uns - Robor Vespa Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f5f5f0] text-gray-900">
+     <!-- Navbar -->
+     <div class="Navbar" style="margin-right: 12px">
+      <ul class="flex items-center justify-between gap-1">
+        <li style="padding-top: 1%">
+          <a href="indexdu.html">
+            <img
+              src="../Images/Logo.png" 
+              alt="Logo"
+              style="width: 120px; height: auto; padding-left: 20%"
+            />
+          </a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="indexdu.html" class="px-4 hover:text-yellow-500 hover:underline""
+            >Startseite</a
+          >
+        </li>
+        <li style="padding-top: 1%">
+          <a href="FindDealerdu.html" class="px-4 hover:text-yellow-500 hover:underline">Händlersuche</a>
+        </li>
+        <li style="padding-top: 1%"> 
+          <a
+            href="overonsdu.html"
+            class="px-4 hover:text-yellow-500 hover:underline"
+            >Über uns</a
+          >
+        </li>
+
+        <li style="padding-top: 1%">
+          <a href="Contactdu.html" class="px-4 hover:text-yellow-500 underline">Kontakt</a>
+        </li>
+
+          <!-- Dropdown container -->
+          <li class="group relative py-1">
+            <!-- Vlag knop -->
+            <button class="p-0 focus:outline-none">
+              <img
+                src="../Images/Duitsland.png"
+                alt="Menu"
+                class="h-[22px] w-[40px]"
+              />
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              class="absolute right-0 z-10 hidden rounded border border-gray-200 bg-white px-2 py-2 shadow-md group-hover:block"
+            >
+            
+              <a href="Contacten.html" class="block py-1 hover:bg-gray-100">
+                <img
+                  src="../Images/Engeland.png"
+                  alt="English"
+                  class="h-[18px] w-[18px]"
+                />
+              </a>
+              <a href="Contact.html" class="block py-1 hover:bg-gray-100">
+                <img
+                  src="../Images/Nederland.png"
+                  alt="Nederlands"
+                  class="h-[18px] w-[18px]"
+                />
+              </a>
+              <a href="Contactfr.html" class="block py-1 hover:bg-gray-100">
+                <img
+                  src="../Images/Frankrijk.png"
+                  alt="Français"
+                  class="h-[18px] w-[18px]"
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Form Title -->
+      <h1 class="mb-12 text-center text-5xl font-bold">Kontaktiere uns</h1>
+
+      <!-- Contact Form -->
+      <form action="send-email.php" method="post" id="contactForm" class="mx-auto grid max-w-4xl grid-cols-2 gap-x-8 gap-y-6">
+        <!-- Left Column -->
+        <div class="space-y-6">
+          <!-- Name -->
+          <div>
+            <label
+              for="naam"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="naam"
+              name="naam"
+              placeholder="Geben Sie Ihren Namen ein"
+              required
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            />
+          </div>
+
+          <!-- Telefonnummer -->
+          <div>
+            <label
+              for="telefoonnummer"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >Telefonnummer</label
+            >
+            <input
+              type="tel"
+              id="telefoonnummer"
+              name="telefoonnummer"
+              placeholder="Geben Sie Ihre Telefonnummer ein"
+              required
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            />
+          </div>
+
+          <!-- Beschreibung -->
+          <div>
+            <label
+              for="beschrijving"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >Beschreibung</label
+            >
+            <textarea
+              id="beschrijving"
+              name="beschrijving"
+              rows="5"
+              placeholder="Fügen Sie eine Beschreibung hinzu"
+              required
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-6">
+          <!-- Email -->
+          <div>
+            <label
+              for="email"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >E-Mail</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Geben Sie Ihre E-Mail ein"
+              required
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            />
+          </div>
+
+          <!-- Bedrijf -->
+          <div>
+            <label
+              for="bedrijf"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >Unternehmen</label
+            >
+            <input
+              type="text"
+              id="bedrijf"
+              name="bedrijf"
+              placeholder="Geben Sie Ihren Unternehmensnamen ein (optional)"
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            />
+          </div>
+
+          <!-- Land -->
+          <div>
+            <label
+              for="land"
+              class="mb-1 block text-sm font-medium text-gray-700"
+              >Land</label
+            >
+            <select
+              id="land"
+              name="land"
+              required
+              class="block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 focus:outline-none"
+            >
+              
+              <option value="" disabled selected>Wählen Sie Ihr Land</option>
+              <option value="Deutschland">Deutschland</option>
+              <option value="Niederlande">Niederlande</option>
+              <option value="Engeland">Engeland</option>
+              <option value="Belgien">Belgien</option>
+              <option value="Frankreich">Frankreich</option>
+              <option value="anders">Anderes</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit Button (Full Width) -->
+        <div class="col-span-2 mt-4 flex justify-center">
+          <button
+            type="submit"
+            class="rounded-full bg-yellow-500 px-12 py-2 font-bold text-black hover:bg-yellow-600"
+          >
+            Senden
+          </button>
+        </div>
+      </form>
+
+      <!-- reCAPTCHA Notice -->
+      <div class="mt-6 text-center text-xs text-gray-500">
+        Diese Seite wird durch reCAPTCHA geschützt. Es gelten die 
+        <a href="#" class="text-gray-700 hover:underline">Datenschutzbestimmungen</a> und
+        <a href="#" class="text-gray-700 hover:underline">Nutzungsbedingungen</a>
+        von Google.
+      </div>
+    </div>
+
+    <div class="w-full bg-black py-20 text-white">
+      <div class="container mx-auto flex flex-wrap justify-center gap-80">
+        <!-- Adresse -->
+        <div class="flex flex-col items-center">
+          <div
+            class="mb-3 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-[#2c4920] p-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+          <a href="https://www.google.com/maps/place/Suetersweg+6A,+7497+MZ+Bentelo/@52.225737,6.6913522,533m/data=!3m1!1e3!4m6!3m5!1s0x47b80c68883e37d1:0xbb3aff1a3bfc830a!8m2!3d52.2257633!4d6.6934872!16s%2Fg%2F11c1gp_ty3?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D">
+          <h3 class="text-center font-medium">Adresse</h3>
+          <p class="text-center text-sm">Sueterseweg 5A</p>
+          <p class="text-center text-sm">7497 MZ Bentelo</p>
+          <p class="text-center text-sm">Niederlande</p>
+        </a>
+        </div>
+
+        <!-- Telefon -->
+        <div class="flex flex-col items-center">
+          <div
+            class="mb-3 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-[#2c4920] p-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+          </div>
+          <a href="tel:0547 292 090">
+          <h3 class="text-center font-medium">Rufen Sie uns an</h3>
+          <p class="text-center text-sm">+31 (0) 547 292 090</p>
+        </a>
+        </div>
+        <!-- Email -->
+        <div class="flex flex-col items-center">
+          <div
+            class="mb-3 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-[#2c4920] p-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+          <a href="mailto:info@robor.nl">
+          <h3 class="text-center font-medium">E-Mail-Adresse</h3>
+          <p class="text-center text-sm">nature@robor.nl</p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="w-full py-16" style="background-color: rgb(35, 45, 6)">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+        <!-- Logo Section -->
+        <div class="mb-6 md:mb-0 md:w-1/4">
+          <img
+            class="w-3/4 md:w-1/2 lg:w-2/5"
+            src="../Images/Logowit.png"
+            alt="LogoRobor"
+          />
+        </div>
+        
+        <!-- Text Section -->
+        <div class="mb-6 md:mb-0 md:w-1/3 text-white">
+          <p class="text-sm">
+            Bei allem, was es gibt, sehen wir Verbesserungsmöglichkeiten, intelligenter und praktischer. Also machen wir uns an die Arbeit! Wie kann es effizienter und bequemer sein und wie können wir Ihre derzeit verwendete Hardware innovativ einsetzen?
+          </p>
+          <p class="text-sm mt-4">
+            Powered by Robor Nature B.V.
+          </p>
+          <p class="text-sm mt-1">
+            © 2023 Alle Rechte vorbehalten. Umgesetzt von <a href="#" class="underline hover:text-gray-300">MaximumControl</a>.
+          </p>
+        </div>
+        
+        <!-- Contact Info Section -->
+        <div class="text-white md:w-1/4">
+          <h3 class="font-bold mb-2">Kontaktinformationen</h3>
+          <ul class="text-sm">
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <a href="tel:+31 (0) 547 292 090" class="hover:underline">+31 (0) 547 292 090</a>
+            </li>
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <a href="mailto:nature@robor.nl" class="hover:underline">nature@robor.nl</a>
+            </li>
+            <a href="https://www.google.nl/maps/place/Robor+Electronics+B.V./@52.2257919,6.6915057,17z/data=!4m6!3m5!1s0x47b80c17328b3449:0x24809ccdd9aff2b9!8m2!3d52.2257525!4d6.6934798!16s%2Fg%2F1tfzwkxd?hl=nl&entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D">
+              <li class="flex items-center mb-1">
+                <span class="mr-2">•</span>
+                <span>Suetersweg 6A, 7497 MZ Bentelo</span>
+              </li>
+            </a>
+            
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <span>Niederlande</span>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

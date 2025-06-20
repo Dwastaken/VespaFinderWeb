@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home VespaFinder</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="Navbar" style="margin-right: 12px">
+      <ul class="flex items-center justify-between gap-1">
+        <li style="padding-top: 1%">
+          <a href="index.html">
+            <img
+              src="../Images/Logo.png"
+              alt="Logo"
+              style="width: 120px; height: auto; padding-left: 20%"
+            />
+          </a>
+        </li>
+        <li style="padding-top: 1%">
+          <a href="index.html" class="px-4 hover:text-yellow-500 underline"
+            >Home</a
+          >
+        </li>
+        <li style="padding-top: 1%">
+          <a href="FindDealer.html" class="px-4 hover:text-yellow-500 hover:underline">FindDealer</a>
+        </li>
+        <li style="padding-top: 1%">
+          <a
+            href="overons.html"
+            class="px-4 hover:text-yellow-500 hover:underline"
+            >Over ons</a
+          >
+        </li>
+
+        <li style="padding-top: 1%">
+          <a href="Contact.html" class="px-4 hover:text-yellow-500 hover:underline">Contact</a>
+        </li>
+
+        <!-- Dropdown container -->
+        <li class="group relative" style="padding-top: 1%">
+          <!-- Vlag knop -->
+          <button class="p-0 focus:outline-none" id="currentLanguage">
+            <img
+              src="../Images/Nederland.png"
+              alt="Menu"
+              style="height: 22px; width: 40px; position: relative"
+              id="currentFlag"
+            />
+          </button>
+
+          <!-- Dropdown menu  -->
+          <div
+            class="absolute right-0 z-10  hidden rounded border border-gray-200 bg-white px-2 py-2 shadow-md group-hover:block"
+          >
+            <a href="indexen.html" class="block py-1 hover:bg-gray-100"data-lang="en">
+              <img
+                src="../Images/Engeland.png"
+                alt="English"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+            <a href="indexdu.html" class="block py-1 hover:bg-gray-100"data-lang="de">
+              <img
+                src="../Images/Duitsland.png"
+                alt="Deutsch"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+            <a href="indexfr.html" class="block py-1 hover:bg-gray-100"data-lang="fr">
+              <img
+                src="../Images/Frankrijk.png"
+                alt="France"
+                style="height: 18px; width: 18px"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Banner -->
+<div class="Banner relative">
+  <img 
+    src="../Images/nest.png"
+    alt="Banner"
+    class="h-auto w-full px-16"  
+    style="max-height: 400px; padding-top: 1%;"
+  />
+
+  <!-- Call To Action -->
+  <h2
+    class="absolute inset-x-0 flex justify-center text-5xl font-bold tracking-wider text-white"
+    style="top: 30%; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"
+  >
+    Start nu met opsporen
+  </h2>
+
+  <!-- Call To Action Button -->
+  <div class="absolute inset-x-0 flex justify-center" style="top: 70%;">
+    <button
+      onclick="window.location.href='FindDealer.html'"
+      class="flex items-center space-x-2 rounded-md bg-yellow-400 px-4 py-2 font-medium text-black hover:bg-yellow-500"
+    >
+      <span>Vind een verkooppunt</span>
+
+      <svg
+        width="20px"
+        height="20px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 12C19 15.866 15.866 19 12 19M19 12C19 8.13401 15.866 5 12 5M19 12H21M12 19C8.13401 19 5 15.866 5 12M12 19V21M5 12C5 8.13401 8.13401 5 12 5M5 12H3M12 5V3M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+    <!-- Tekst en afbeelding sectie Aziatische hoornaar -->
+    <div class="container mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col items-center gap-12 md:flex-row">
+        <!-- Tekst -->
+        <div class="w-full md:w-1/2">
+          <h2 class="mb-4 text-2xl font-bold">Aziatische Hoornaar</h2>
+          <p class="text-gray-700">
+            De Aziatische hoornaar (Vespa velutina) is een invasieve exoot die sinds een aantal jaren in Nederland wordt aangetroffen. De hoornaar is schadelijk voor honingbijen, hommelsoorten en andere bestuivende insecten, en daardoor komt ook het ecosysteem en onze omgeving in gevaar. Voor fruittelers is het bijvoorbeeld een catastrofe als bestuivende insecten in groten getale worden gedood.
+
+Nesten moeten dus worden opgespoord. Een effectieve methode hiervoor is het plaatsen van een kleine zender op de hoornaar.
+
+Robor Nature ontwikkelde onlangs een, in meerdere opzichten, revolutionair systeem om hoornaars met een microzender op te sporen. Dankzij moderne radio technologie kan gericht gezocht worden via handzame richtingsgevoelige ontvangers. De zenders zijn tevens via een smartphone op te sporen, en ze melden zich ook via het mobiele netwerk, wat het zoeken vergemakkelijkt. 
+          </p>
+        </div>
+
+        <!--afbeelding-->
+        <div class="aspect-video w-full md:w-1/2">
+          <img
+            src="../Images/AziatischeHoornaar.png"
+          style="height:auto; width:auto; padding-left: 30%; "
+            alt="Beschrijvende tekst"
+            class="h-full w-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en video Pakket overzicht -->
+    <div class="mb-8 w-full bg-[rgba(239,242,230,1)] py-12">
+      <div class="container mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center gap-12 md:flex-row">
+          <!-- Video -->
+          <div class="w-full md:w-1/2">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/sdlGwYlLGUU?si=fPKc2ZJkucsi7oTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <!-- Tekst -->
+          <div class="w-full md:w-1/2">
+            <h2 class="mb-4 text-2xl font-bold">Pakket Inhoud</h2>
+            <p class="text-gray-700">
+              <li>Weegschaal in milligrammen</li>
+              <li>2x weeg potje</li>
+              <li>Snapy insectenvanger</li>
+              <li>Tools voor het aanbrengen van de zender</li>
+              <li>Tentje voor vliegtest</li>
+              <li>3x Ultra gevoelige ontvanger</li>
+              <li>3x Laad-unit voor de zender</li>
+              <li>5x zender</li>
+              <li>Antenne standaard voor op de auto</li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en afbeelding/video sectie De zender -->
+    <div class="container mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col items-center gap-12 md:flex-row">
+        <!-- Tekst -->
+        <div class="w-full md:w-1/2">
+          <h2 class="mb-4 text-2xl font-bold">De zender</h2>
+          <p class="text-gray-700">
+            Het zendertje zelf is zeer lichtgewicht (160mg) en heeft een kortere antenne dan tot nu toe mogelijk was. De hoornaar heeft er dus qua gewicht en ballast minder last van en daardoor is de kans groter dat de hoornaar met zender (na het opsporen van het nest) weer terug gevangen kan worden, en zo is het zendertje meerdere malen opnieuw te gebruiken. Het zendertje is oplaadbaar en instelbaar via een bijgeleverde controller.
+            Er is een nieuwe en veel makkelijkere methode voor bevestiging ontwikkeld, waarbij de hoornaar niet verdoofd hoeft te worden. Het aanbrengen duurt 5 seconden. Dit betekend minder stress voor de hoornaar en iedereen kan dit veilig zelf doen. De hoornaar kan direct weer worden vrij gelaten en hoeft niet eerst weer bij te komen en aan te sterken alvorens te kunnen vliegen.
+          </p>
+        </div>
+
+        <!-- Afbeelding-->
+        <div class="aspect-video w-full md:w-1/2">
+          <img
+            src="../Images/zenderr.png"
+            alt="Beschrijvende tekst"
+            class="h-full w-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en video Installeren Zender-->
+    <div class="mb-8 w-full bg-[rgba(239,242,230,1)] py-12">
+      <div class="container mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center gap-12 md:flex-row">
+
+          <!-- Video -->
+          <div class="w-full md:w-1/2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sdlGwYlLGUU?si=JLXzfTunEiUW4phr&amp;start=56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <!-- Tekst -->
+          <div class="w-full md:w-1/2">
+            <h2 class="mb-4 text-2xl font-bold">Zender Installeren</h2>
+            <p class="text-gray-700">
+              Doormiddel van speciaal ontworpen hulpgereedschappen kan de zender eenvoudig aan de Aziatische hoornaar bevestigd worden. Alle benodigde gereedschappen kunt u terug vinden in de AH opsporing kit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en afbeelding/video Zoeken met Hoornaar app -->
+    <div class="container mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col items-center gap-12 md:flex-row">
+        <!-- Tekst -->
+        <div class="w-full md:w-1/2">
+          <h2 class="mb-4 text-2xl font-bold">Zoeken met Hoornaar app</h2>
+          <p class="text-gray-700">
+            Als men in de buurt is van het nest kan iedereen met een Android of IOS smartphone via een speciale app genaamd Vespa Finder mee helpen zoeken.
+
+ Als men de zender ontvangt op de app, dan zien alle andere gebruikers deze ontvangen zender ook op de app. Zo kunt u met een groep app gebruikers snel een Aziatische hoornaar nest opsporen. Dit kunt u doen al lopend, fietsend of in combinatie met de ultra gevoelige ontvangers op de auto.
+          </p>
+        </div>
+
+        <!-- Afbeelding-->
+        <div class="aspect-video w-full md:w-1/2">
+          <img
+            src="../Images/Finder.png"
+          style="height: 500px; width:auto; padding-left: 30%; "
+            alt="Beschrijvende tekst"
+            class="h-full w-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en video Zoeken met pijlontvanger  -->
+    <div class="mb-8 w-full bg-[rgba(239,242,230,1)] py-12">
+      <div class="container mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center gap-12 md:flex-row">
+          <!-- Video -->
+          <div class="aspect-video w-full md:w-1/2">
+            <img
+              src="../Images/Pijlontvanger2.png"
+              style="padding-right: 45%"
+              class="h-full w-full rounded-lg object-cover"
+            />
+          </div>
+
+          <!-- Tekst -->
+          <div class="w-full md:w-1/2">
+            <h2 class="mb-4 text-2xl font-bold">Zoeken met pijlontvanger</h2>
+            <p class="text-gray-700">
+              De ontvanger bestaat uit een handzame richting-gevoelige antenne met een slimme ontvanger. Je kunt het signaal eenvoudig volgen met de antenne. De signaalsterkte op de ontvanger word met 16 LEDs en in toonhoogte kenbaar gemaakt. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekst en afbeelding/video Zoeken met drone(optioneel) -->
+    <div class="container mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col items-center gap-12 md:flex-row">
+        <!-- Tekst -->
+        <div class="w-full md:w-1/2">
+          <h2 class="mb-4 text-2xl font-bold">Zoeken met drone(optioneel)</h2>
+          <p class="text-gray-700">
+            Er is een speciale ontvanger ontwikkeld die gekoppeld kan worden aan een drone, waarmee op de remote controller de signaalsterkte in beeld kan worden gebracht. Dit bied een belangrijk voordeel, aangezien de gevoeligheid en de reikwijdte enorm vergroot word wanneer men vanuit grotere hoogte kan zoeken.  Het bereik word hierbij opgerekt tot 2 kilometer.
+          </p>
+        </div>
+
+        <!-- Afbeelding-->
+        <div class="aspect-video w-full md:w-1/2">
+          <img
+            src="../Images/Drone.png"
+            alt="Beschrijvende tekst"
+            class="h-full w-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+
+  
+  <footer class="w-full py-16" style="background-color: rgb(35, 45, 6)">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+        <!-- Logo Section -->
+        <div class="mb-6 md:mb-0 md:w-1/4">
+          <img
+            class="w-3/4 md:w-1/2 lg:w-2/5"
+            src="../Images/Logowit.png"
+            alt="LogoRobor"
+          />
+        </div>
+        
+        <!-- Text Section -->
+        <div class="mb-6 md:mb-0 md:w-1/3 text-white">
+          <p class="text-sm">
+            Bij alles wat er is, zien wij hoe het beter kan, slimmer en praktischer. Dus gaan we daarmee aan de slag! Hoe kan het efficiënter en handiger en hoe kunnen we uw hardware innovatief inzetten die op dit moment wordt gebruikt?
+          </p>
+          <p class="text-sm mt-4">
+            Powered by Robor Nature B.V.
+          </p>
+          <p class="text-sm mt-1">
+            © 2023 Alle Rechten Voorbehouden. Gerealiseerd door <a href="#" class="underline hover:text-gray-300">MaximumControl</a>.
+          </p>
+        </div>
+        
+        <!-- Contact Info Section -->
+        <div class="text-white md:w-1/4">
+          <h3 class="font-bold mb-2">Contact info</h3>
+          <ul class="text-sm">
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <a href="tel:+31 (0) 547 292 090" class="hover:underline">+31 (0) 547 292 090</a>
+            </li>
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <a href="mailto:nature@robor.nl" class="hover:underline">nature@robor.nl</a>
+            </li>
+            <a href="https://www.google.nl/maps/place/Robor+Electronics+B.V./@52.2257919,6.6915057,17z/data=!4m6!3m5!1s0x47b80c17328b3449:0x24809ccdd9aff2b9!8m2!3d52.2257525!4d6.6934798!16s%2Fg%2F1tfzwkxd?hl=nl&entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D">
+              <li class="flex items-center mb-1">
+                <span class="mr-2">•</span>
+                <span>Suetersweg 6A, 7497 MZ Bentelo</span>
+              </li>
+            </a>
+            
+            <li class="flex items-center mb-1">
+              <span class="mr-2">•</span>
+              <span>Nederland</span>
+            </li>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>  
+</html>
