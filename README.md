@@ -1,6 +1,6 @@
 # VespaFinderWeb
 
-# Talen gebruikt zijn:
+## Talen gebruikt zijn:
 
 HTML, CSS, Javascript
 (tailwindcss voor de css) 
