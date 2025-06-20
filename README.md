@@ -1,8 +1,8 @@
-# VespaFinderWeb
+.# VespaFinderWeb
 
 ## Talen gebruikt zijn:
 
-HTML, CSS, Javascript
+HTML, CSS, Javascript, PHP
 (tailwindcss voor de css) 
 API = MapboxAPI
 
