@@ -62,7 +62,7 @@ voor de MapboxAPI en het toevoegen van de pinpoints is Javascript gebruikt.
 dit is te doen in de FindDealer pages. (FindDealer.html, FindDealeren.html, FindDealerdu.html, FindDealerfr.html)
 
 hieronder de code voor het toevoegen van een pinpoints
-dit stukje code kan je zetten in de
+dit stukje code kan je zetten in:
 ```Javascript
 const markers = [] array
 
