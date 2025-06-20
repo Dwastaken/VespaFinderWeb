@@ -1,6 +1,6 @@
 # VespaFinderWeb
 
-#Talen gebruikt zijn:
+# Talen gebruikt zijn:
 
 HTML, CSS, Javascript
 (tailwindcss voor de css) 
@@ -12,6 +12,7 @@ Voor testen van de PHPMailer heb ik XAMPP Apache gebruikt.
 #PHPmailer
 code blok hieronder te vinden in de (send-email.php)
 
+```PHP
 try {
     // Server instellingen
     $mail->isSMTP();
@@ -21,30 +22,30 @@ try {
     $mail->Password = 'filgkykajrzppetk'; // App-wachtwoord
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
+```
 
+in dit code blok kan je bij username invullen welke mail het vanaf verstuurd kan worden. Voor het password moet je voor je google account een 2 staps verifictie aanmaken en
 
-    in dit code blok kan je bij username invullen welke mail het vanaf verstuurd kan worden.
-    Voor het password moet je voor je google account een 2 staps verifictie aanmaken en
-    hieronder vind je een stappenplan voor het aanmaken van het wachtwoord: 
+hieronder vind je een stappenplan voor het aanmaken van het wachtwoord: 
 
 
 Stappen:
-Ga naar: https://myaccount.google.com/apppasswords
+1. Ga naar: https://myaccount.google.com/apppasswords
 
-Log in met je Google-account (als je dat nog niet bent).
+2. Log in met je Google-account (als je dat nog niet bent).
 
 Als je nog geen 2-stapsverificatie hebt ingesteld, word je gevraagd dat eerst te doen.
 
-Kies bij App bijvoorbeeld “Mail” en bij Apparaat bijvoorbeeld “Other (Custom name)” → geef het een naam zoals “PHPMailer”.
+3. Kies bij App bijvoorbeeld “Mail” en bij Apparaat bijvoorbeeld “Other (Custom name)” → geef het een naam zoals “PHPMailer”.
 
-Klik op Genereren.
+4. Klik op Genereren.
 
 Google toont je een wachtwoord van 16 tekens (zonder spaties). Gebruik dit wachtwoord in plaats van je gewone wachtwoord in PHPMailer.
 
-zet de code in je wachtwoord veld
+5. zet de code in je wachtwoord veld
 
 Voor het aanpassen van de emails naar welke dealers het verstuurd moet worden pas dit stukje code aan (ook te vinden in de send-email.php)
-
+```PHP
 // Ontvanger bepalen op basis van land 
 $ontvangers = [
     "Nederland" => "your_email@gmail.com",
@@ -53,14 +54,16 @@ $ontvangers = [
     "Engeland" => "your_email@gmail.com",
     "Anders" => "your_email@gmail.com"
 ];
+```
 
-
-#Mapbox
+# Mapbox
 voor de MapboxAPI en het toevoegen van de pinpoints is Javascript gebruikt.
 dit is te doen in de FindDealer pages. (FindDealer.html, FindDealeren.html, FindDealerdu.html, FindDealerfr.html)
 
 hieronder de code voor het toevoegen van een pinpoints
-dit stukje code kan je zetten in de  const markers = [] array
+dit stukje code kan je zetten in de
+```Javascript
+const markers = [] array
 
 {
           lngLat: [6.693807, 52.22567],
@@ -74,3 +77,4 @@ dit stukje code kan je zetten in de  const markers = [] array
             </div>
           `,
         },
+```
