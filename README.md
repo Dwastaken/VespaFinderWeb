@@ -14,15 +14,15 @@ code blok hieronder te vinden in de (send-email.php)
 
 ```PHP
 try {
-        // Server instellingen
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'your_email@gmail.com'; // jouw Gmail
-        $mail->Password = 'filgkykajrzppetk'; // App-wachtwoord
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-    } 
+   // Server instellingen
+   $mail->isSMTP();
+   $mail->Host = 'smtp.gmail.com';
+   $mail->SMTPAuth = true;
+   $mail->Username = 'your_email@gmail.com'; // jouw Gmail
+   $mail->Password = 'filgkykajrzppetk'; // App-wachtwoord
+   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+   $mail->Port = 587;
+} 
 ```
 
 in dit code blok kan je bij username invullen welke mail het vanaf verstuurd kan worden. Voor het password moet je voor je google account een 2 staps verifictie aanmaken en
