@@ -1,19 +1,17 @@
 # VespaFinderWeb
 
-Dingen om op te letten:
+#Talen gebruikt zijn:
 
 HTML, CSS, Javascript
-gemaakt met tailwindcss voor de css 
+(tailwindcss voor de css) 
 API = MapboxAPI
 
-
-1. Contactformulier maakt gebruik van PHPMailer dit werkt niet als het niet op een localhost of server gedraaid word.
+Contactformulier maakt gebruik van PHPMailer dit werkt niet als het niet op een localhost of server gedraaid word.
 Voor testen van de PHPMailer heb ik XAMPP Apache gebruikt.
 
+#PHPmailer
+code blok hieronder te vinden in de (send-email.php)
 
-
-te vinden in de (send-email.php)
-2.
 try {
     // Server instellingen
     $mail->isSMTP();
@@ -28,7 +26,6 @@ try {
     in dit code blok kan je bij username invullen welke mail het vanaf verstuurd kan worden.
     Voor het password moet je voor je google account een 2 staps verifictie aanmaken en
     hieronder vind je een stappenplan voor het aanmaken van het wachtwoord: 
-
 
 
 Stappen:
@@ -46,7 +43,7 @@ Google toont je een wachtwoord van 16 tekens (zonder spaties). Gebruik dit wacht
 
 zet de code in je wachtwoord veld
 
-En voor het aanpassen van de emails naar waar het verstuurd moet worden pas dit stukje code aan
+Voor het aanpassen van de emails naar welke dealers het verstuurd moet worden pas dit stukje code aan (ook te vinden in de send-email.php)
 
 // Ontvanger bepalen op basis van land 
 $ontvangers = [
@@ -57,8 +54,11 @@ $ontvangers = [
     "Anders" => "your_email@gmail.com"
 ];
 
+
+#Mapbox
 voor de MapboxAPI en het toevoegen van de pinpoints is Javascript gebruikt.
-dit is te doen in de FindDealer pages.
+dit is te doen in de FindDealer pages. (FindDealer.html, FindDealeren.html, FindDealerdu.html, FindDealerfr.html)
+
 hieronder de code voor het toevoegen van een pinpoints
 dit stukje code kan je zetten in de  const markers = [] array
 
