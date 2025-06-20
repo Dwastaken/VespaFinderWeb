@@ -57,7 +57,7 @@ $ontvangers = [
 ];
 ```
 
-# Mapbox
+## Mapbox
 voor de MapboxAPI en het toevoegen van de pinpoints is Javascript gebruikt.
 dit is te doen in de FindDealer pages. (FindDealer.html, FindDealeren.html, FindDealerdu.html, FindDealerfr.html)
 
