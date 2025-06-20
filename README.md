@@ -72,9 +72,9 @@ const markers = [] array
             <div style="text-align: center;">
               <img src="../Images/robormarker.png" alt="Robor Electronics" style="width: 250px; height: auto; margin-bottom: 10px;" />
               <p>Robor Electronics</p>
-              <p>Suetersweg 6A, 7497 MZ Bentelo</p>
-              <p>0547292090</p>
-              <a href="https://robor.nl"><p>https://robor.nl/</p></a>
+              <p>Address</p>
+              <p>Telefoon nummer</p>
+              <a href="Website Link"><p>https://robor.nl/</p></a>
             </div>
           `,
         },
